@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="weather-header">
+        <i class='bx bx-left-arrow-alt'></i><h1>Weather Forecast</h1>
+      </div>
+      <section class="input-section">
+        <input id="locationInput" type="text" placeholder="Enter city name" required />
+        <button id="searchButton">Search</button>
+      </section>
+      <section class="weather-info">
+        <div class="icon-container">
+          <!-- <img id="weatherIcon" src="" alt="Weather Icon"> -->
+          <div id="weatherEmoji" class="emoji"></div>
+        </div>
+        <div class="temp-info">
+          <span id="temperature">_ °C</span>
+          <div id="weatherDescription"></div>
+        </div>
+        <div class="location-info">
+          <i class='bx bx-map'></i><span id="cityName">_, _</span>
+        </div>
+        <div class="details-container">
+          <div class="details">
+            <span id="humidity">Humidity: _%</span>
+            <span id="windSpeed">Wind Speed: _ m/s</span>
+          </div>
+          <div class="details">
+            <span id="feelsLike">Feels like: _ °C</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
